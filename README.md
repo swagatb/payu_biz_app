@@ -2,9 +2,12 @@
 django app to integrate basic payUBiz payment gateway
 
 ## setup
-Add `payu` directory in your project and `"payu"` in the INSTALLED_APP
+Add `payu` directory in your project and `"payu"` in the `INSTALLED_APP`
 
 That's all...
+
+## demo
+This repo also contain a demo directory. Have a look how it works.
 
 ## MIT License
 Permission is hereby granted, free of charge, to any person obtaining
