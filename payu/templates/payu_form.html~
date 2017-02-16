@@ -3,18 +3,17 @@
 <title>Redirecting to PayU for Payment</title>
 <script>
 function redirect_for_payment_at_payu() {
-  alert("Boom")
+  alert(1)
   var payu_form = document.forms.payu_form;
   console.log(payu_form)
-  payu_form.submit();
+  alert(2)
+  //payu_form.submit();
 }
 </script>
 </head>
 <body onload="redirect_for_payment_at_payu();">
-<!--<form action="http://surfly-dev.opentestdrive.com/order/success/" method="post" name="payu_form">{% csrf_token %}-->
 <form action="{{ action }}" method="post" name="payu_form">{% csrf_token %}
 {{ form.as_p }}
-{{ hash_form.as_p }}
 </form>
 <body>
 <html>
